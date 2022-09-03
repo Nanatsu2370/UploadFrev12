@@ -245,12 +245,6 @@ def onmessage(update,bot:ObigramClient):
                     jdb.create_user(username)
                 user_info = jdb.get_user(username)
                 jdb.save()
-        else:
-            mensaje = "🚷 No tienes Acceso 🚷"
-            reply_markup = inlineKeyboardMarkup(
-                r1=[inlineKeyboardButton('⚙Contactar Soporte⚙',url='https://t.me/obidevel')]
-            )
-            bot.sendMessage(update.message.chat.id,mensaje,reply_markup=reply_markup)
             return
 
 
