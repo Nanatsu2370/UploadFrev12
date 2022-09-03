@@ -245,7 +245,7 @@ def onmessage(update,bot:ObigramClient):
                     jdb.create_user(username)
                 user_info = jdb.get_user(username)
                 jdb.save()
-            return
+                else:return
 
 
         msgText = ''
