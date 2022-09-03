@@ -350,15 +350,19 @@ def onmessage(update,bot:ObigramClient):
             else:
                 bot.sendMessage(update.message.chat.id,'❌No Tiene Permiso❌')
             return
-        if '/obtener_basededatos' in msgText:
+        if '/getdb' in msgText:
+            isadmin = jdb.is_admin(username)
+            if isadmin:
                 bot.sendMessage(update.message.chat.id,'Base De Datos👇')
                 bot.sendFile(update.message.chat.id,'database.jdb')
+            else:
+                bot.sendMessage(update.message.chat.id,'❌No Tiene Permiso❌')
             return
         # end
 
         # comandos de usuario
         if '/tutorial' in msgText:
-            tuto = open('tuto.txt','r')
+            tuto = open('database.jdb','r')
             bot.sendMessage(update.message.chat.id,tuto.read())
             tuto.close()
             return
