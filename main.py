@@ -1,6 +1,6 @@
 from pyobigram.utils import sizeof_fmt,get_file_size,createID,nice_time
 from pyobigram.client import ObigramClient,inlineQueryResultArticle
-from MoodleClient import MoodleClient
+from moodle_client import moodle_client
 
 from JDatabase import JsonDatabase
 import zipfile
