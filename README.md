@@ -12,6 +12,7 @@ heroku create myherokuapp
 heroku git:remote myherokuapp
 git push heroku master
 ```
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/zUcpux)
 
 # Comandos En El Bot (Usuarios Nomales)
 ```/start : Inicar Bot , Te Da La INfo
